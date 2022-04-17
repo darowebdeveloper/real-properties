@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real Properties-Admin</title>
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
     <link href="./index.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-200">
     <div class="flex">
       <!-- Sidebar -->
-      <div class="bg-green-900 w-64 h-screen">
+      <div class="bg-green-900 w-64">
         <div class="bg-green-700">
           <div class="text-gray-200 uppercase font-bold p-5 text-xl">Real Properties</div>
         </div>
@@ -56,7 +56,7 @@
           <!-- Top Nav -->
           <div class="bg-white px-2 py-0.5 flex items-center justify-between">
             <!-- left -->
-            <div class="flex p-3">
+            <div class="flex p-3 md:w-3/4 sm:w-1/3 mr-auto">
               <img
                 src="https://images.pexels.com/users/avatars/146718/nextvoyage-287.jpeg?auto=compress&fit=crop&h=256&w=256"
                 alt="Admin"
@@ -66,7 +66,7 @@
             </div>
             <!-- left -->
             <!-- right -->
-            <div class="flex space-x-3">
+            <div class="flex space-x-3 md:w-1/4 sm:w-2/3">
               <div class="bg-gray-200 text-xl h-8 w-8 rounded-full flex justify-center items-center">
                 <i class="fa fa-search" aria-hidden="true"></i>
               </div>
@@ -81,9 +81,339 @@
             <!-- right -->
           </div>
           <!-- Top Nav -->
+          <!-- Site banner -->
+          <div class="bg-green-200 m-7 p-6">
+            <div class="text-4xl font-medium text-gray-800">Good morning, Admin. 👋</div>
+            <div class="mt-4">These are the stats for today, have a good day.</div>
+          </div>
+          <!-- Site banner -->
+
+          <!-- Card section -->
+          <div class="flex m-7 space-x-6">
+            <!-- Card -->
+            <div class="w-1/2 bg-white p-4">
+              <div><i class="fa fa-money text-4xl text-amber-600"></i></div>
+              <div class="font-bold text-gray-600 text-xl">Super plus</div>
+              <div class="uppercase my-3 font-bold text-sm text-gray-400">Sales</div>
+              <span class="font-bold text-3xl">$ 23,000</span>
+              <span class="bg-green-800 text-white px-3 py-1 rounded-full text-xs font-semibold align-text-top">+58%</span>
+              <canvas id="chart1"></canvas>
+            </div>
+            <!-- Card -->
+
+            <!-- Card -->
+            <div class="w-1/2 bg-white p-4">
+              <div><i class="fa fa-money text-4xl text-amber-600"></i></div>
+              <div class="font-bold text-gray-600 text-xl">Super plus</div>
+              <div class="uppercase my-3 font-bold text-sm text-gray-400">Sales</div>
+              <span class="font-bold text-3xl">$ 3,000</span>
+              <span class="bg-red-800 text-white px-3 py-1 rounded-full text-xs font-semibold align-text-top">-8%</span>
+              <canvas id="chart2"></canvas>
+            </div>
+            <!-- Card -->
+          </div>
+          <!-- Card section -->
+
+          <!-- Card section -->
+          <div class="flex m-7 space-x-6">
+            <!-- Card -->
+            <div class="w-1/2 bg-white p-4">
+              <div><i class="fa fa-money text-4xl text-amber-600"></i></div>
+              <div class="font-bold text-gray-600 text-xl">Super plus</div>
+              <div class="uppercase my-3 font-bold text-sm text-gray-400">Sales</div>
+              <span class="font-bold text-3xl">$ 23,000</span>
+              <span class="bg-green-800 text-white px-3 py-1 rounded-full text-xs font-semibold align-text-top">+58%</span>
+              <canvas id="chart3"></canvas>
+            </div>
+            <!-- Card -->
+
+            <!-- Card -->
+            <div class="w-1/2 bg-white p-4">
+              <div><i class="fa fa-money text-4xl text-amber-600"></i></div>
+              <div class="font-bold text-gray-600 text-xl">Super plus</div>
+              <div class="uppercase my-3 font-bold text-sm text-gray-400">Sales</div>
+              <span class="font-bold text-3xl">$ 3,000</span>
+              <span class="bg-red-800 text-white px-3 py-1 rounded-full text-xs font-semibold align-text-top">-8%</span>
+              <canvas id="chart4"></canvas>
+            </div>
+            <!-- Card -->
+          </div>
+          <!-- Card section -->
+
+          <!-- Card section -->
+          <div class="flex m-7 space-x-6">
+            <div class="bg-white w-1/3 p-4 divide-y divide-gray-200">
+              <div class="font-bold pb-4">Top countries</div>
+              <canvas id="countries" class="pt-4"></canvas>
+            </div>
+            <div class="bg-white w-2/3 p-4">
+              <div class="font-bold pb-4">Top channels</div>
+              <div class="flex bg-gray-100 text-gray-500 p-3 uppercase font-bold text-xs">
+                <div class="w-1/3">
+                  <div>Source</div>
+                </div>
+                <div class="w-3/4 flex space-x-14">
+                  <div>Visitors</div>
+                  <div>Revenues</div>
+                  <div>Sales</div>
+                  <div>Conversion</div>
+                </div>
+              </div>
+              <div class="divide-y divide-gray-300">
+                <div class="pt-2 pb-2">
+                  <div class="flex">
+                    <div class="w-1/3">
+                      <div class="flex items-center">
+                        <i class="fa fa-youtube text-4xl text-red-600" aria-hidden="true"></i>
+                        <div class="ml-3">YouTube</div>
+                      </div>
+                    </div>
+                    <div class="w-2/3 flex items-center space-x-20">
+                      <div>2.4K</div>
+                      <div class="text-green-500">$600,000</div>
+                      <div>342</div>
+                      <div class="text-blue-500">34%</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-2 pb-2">
+                  <div class="flex">
+                    <div class="w-1/3">
+                      <div class="flex items-center">
+                        <i class="fa fa-github text-4xl text-gray-600" aria-hidden="true"></i>
+                        <div class="ml-3">Github</div>
+                      </div>
+                    </div>
+                    <div class="w-2/3 flex items-center space-x-20">
+                      <div>2.4K</div>
+                      <div class="text-green-500">$600,000</div>
+                      <div>342</div>
+                      <div class="text-blue-500">34%</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-2 pb-2">
+                  <div class="flex">
+                    <div class="w-1/3">
+                      <div class="flex items-center">
+                        <i class="fa fa-google text-4xl text-yellow-400" aria-hidden="true"></i>
+                        <div class="ml-3">Google</div>
+                      </div>
+                    </div>
+                    <div class="w-2/3 flex items-center space-x-20">
+                      <div>2.4K</div>
+                      <div class="text-green-500">$600,000</div>
+                      <div>342</div>
+                      <div class="text-blue-500">34%</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-2 pb-2">
+                  <div class="flex">
+                    <div class="w-1/3">
+                      <div class="flex items-center">
+                        <i class="fa fa-facebook text-4xl text-blue-600" aria-hidden="true"></i>
+                        <div class="ml-3">Facebook</div>
+                      </div>
+                    </div>
+                    <div class="w-2/3 flex items-center space-x-20">
+                      <div>2.4K</div>
+                      <div class="text-green-500">$600,000</div>
+                      <div>342</div>
+                      <div class="text-blue-500">34%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card section -->
         </div>
       </div>
       <!-- Main -->
     </div>
+    <script>
+      const ctx1 = document.getElementById('chart1').getContext('2d');
+      const ctx2 = document.getElementById('chart2').getContext('2d');
+      const ctx3 = document.getElementById('chart3').getContext('2d');
+      const ctx4 = document.getElementById('chart4').getContext('2d');
+      const ctx5 = document.getElementById('countries').getContext('2d');
+      const chart1 = new Chart(ctx1, {
+        type: 'bar',
+        data: {
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June'],
+          datasets: [
+            {
+              label: '# of Sales',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+              ],
+              borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+      const chart2 = new Chart(ctx2, {
+        type: 'line',
+        data: {
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June'],
+          datasets: [
+            {
+              label: '# of Sales',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+              ],
+              borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+      const chart3 = new Chart(ctx3, {
+        type: 'pie',
+        data: {
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June'],
+          datasets: [
+            {
+              label: '# of Sales',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+              ],
+              borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+      const chart4 = new Chart(ctx4, {
+        type: 'radar',
+        data: {
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June'],
+          datasets: [
+            {
+              label: '# of Sales',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+              ],
+              borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+      const chart5 = new Chart(ctx5, {
+        type: 'pie',
+        data: {
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June'],
+          datasets: [
+            {
+              label: '# of Sales',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+              ],
+              borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {},
+        },
+      });
+    </script>
   </body>
 </html>
