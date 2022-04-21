@@ -10,79 +10,99 @@
     <title>Apple Ecommerce</title>
   </head>
   <body>
-    <div class="">
+    <div class="my-container">
       <!-- section 1 -->
-      <section class="relative w-full h-screen bg-cyan-200 flex items-center justify-evenly [clip-path:polygon(100%_0,100%_95%,38%_100%,0_100%,0_0)]">
-        <!-- logo -->
-        <a href="/" class="absolute top-5 left-5">
-          <i class="fab fa-apple text-7xl"></i>
-        </a>
-        <!-- logo -->
-        <!-- nav -->
-        <nav class="absolute top-5 right-[10%]">
-          <a href="#" class="text-lg inline-block mx-3 hover:scale-110 transition-transform duration-300">iPhone12</a>
-          <a href="#" class="text-lg inline-block mx-3 hover:scale-110 transition-transform duration-300">Macbook Air</a>
-          <a href="#" class="text-lg inline-block mx-3 hover:scale-110 transition-transform duration-300">Watches</a>
-          <a href="#" class="text-lg inline-block mx-3 hover:scale-110 transition-transform duration-300">AirPods</a>
-        </nav>
-        <!-- nav -->
-        <!-- Cube -->
-        <div class="cube-wrapper [perspective:1000px]">
-          <div
-            class="cube w-[300px] h-[550px] [transform:rotateX(0)_rotateY(20deg)_rotateZ(0)] [transform-style:preserve-3d] transition-transform duration-500 relative top-[-20px]"
-          >
-            <div
-              class="front-side w-full h-full absolute bg-gray-50 p-[25px] [transform:translateZ(50px)] [transform-style:preserve-3d] shadow-lg before:w-full before:h-[100px] before:bg-gray-50 before:absolute before:top-0 before:left-0 before:[transform:rotateX(-90deg)] before:[transform-origin:top] after:w-full after:h-[100px] after:bg-gray-50 after:absolute after:bottom-0 after:left-0 after:[transform:rotateX(90deg)] after:[transform-origin:bottom]"
-            >
-              <img class="w-full h-full object-contain" src="./images/iphone.png" alt="iPhone" />
-            </div>
-            <div
-              class="back-side w-full h-full absolute bg-gray-50 [transform:translateZ(-50px)] [transform-style:preserve-3d] shadow-lg flex justify-center items-center before:content-['iPhone'] before:w-[100px] before:h-full before:bg-gray-50 before:absolute before:top-0; before:left-0 before:[transform:rotateY(-90deg)] before:[transform-origin:left] before:flex before:items-center before:justify-center before:font-light before:text-amber-500 after:content-['iPhone'] after:w-[100px] after:h-full after:bg-gray-50 after:absolute after:top-0; after:right-0 after:[transform:rotateY(90deg)] after:[transform-origin:right] after:flex after:items-center after:justify-center after:font-light after:text-amber-500"
-            >
-              <i class="fab fa-apple text-7xl text-cyan-200 drop-shadow-md [transform:rotateY(180deg)]"></i>
-            </div>
-          </div>
-          <!-- Cube controls -->
-          <div
-            class="controls absolute bottom-[-150px] left-1/2 -translate-x-1/2 w-[100px] h-[100px] bg-black/90 rounded-[50%] border-[10px] border-black/80"
-          >
-            <a href="#" class="top-x-control absolute group top-0 left-1/2 -translate-x-1/2"
-              ><i class="fa fa-arrow-up text-cyan-200 text-xl opacity-50 transition-opacity group-hover:opacity-100"></i
-            ></a>
-            <a href="#" class="bottom-x-control absolute group bottom-0 left-1/2 -translate-x-1/2"
-              ><i class="fa fa-arrow-down text-cyan-200 text-xl opacity-50 transition-opacity group-hover:opacity-100"></i
-            ></a>
-            <a href="#" class="left-y-control absolute group top-1/2 left-0 -translate-y-1/2"
-              ><i class="fa fa-arrow-left text-cyan-200 text-xl opacity-50 transition-opacity group-hover:opacity-100"></i
-            ></a>
-            <a href="#" class="right-y-control absolute group top-1/2 right-0 -translate-y-1/2"
-              ><i class="fa fa-arrow-right text-cyan-200 text-xl opacity-50 transition-opacity group-hover:opacity-100"></i
-            ></a>
-            <a href="#" class="top-z-control absolute group top-[10%] right-[10%] rotate-45"
-              ><i class="fa fa-arrow-down text-cyan-200 text-xl opacity-50 transition-opacity group-hover:opacity-100"></i
-            ></a>
-            <a href="#" class="bottom-z-control absolute group bottom-[10%] left-[10%] rotate-45"
-              ><i class="fa fa-arrow-up text-cyan-200 text-xl opacity-50 transition-opacity group-hover:opacity-100"></i
-            ></a>
-          </div>
-          <!-- Cube controls -->
+      <section
+        class="section-1 h-screen w-full bg-cyan-400 [clip-path:polygon(100%_0,100%_95%,38%_100%,0_100%,0_0)] flex items-center justify-evenly relative"
+      >
+        <!-- menu -->
+        <div class="absolute top-0 left-0 w-full flex items-center px-5 py-2">
+          <!-- logo -->
+          <a href="/" class="logo">
+            <i class="fas fa-apple-alt text-7xl text-gray-900/80"></i>
+          </a>
+          <!-- logo -->
+          <!-- nav bar -->
+          <nav class="navbar ml-auto text-lg">
+            <a href="#" class="navbar-link px-5 py-2 transition-transform duration-500 hover:scale-110 text-gray-900 inline-block">iPhone 12</a>
+            <a href="#" class="navbar-link px-5 py-2 transition-transform duration-500 hover:scale-110 text-gray-900 inline-block">Macbook Air</a>
+            <a href="#" class="navbar-link px-5 py-2 transition-transform duration-500 hover:scale-110 text-gray-900 inline-block">Watch</a>
+            <a href="#" class="navbar-link px-5 py-2 transition-transform duration-500 hover:scale-110 text-gray-900 inline-block">AirPods</a>
+          </nav>
+          <!-- nav bar -->
         </div>
-        <!-- Cube -->
-        <!-- banner -->
-        <div class="flex justify-center items-center flex-col">
-          <h1 class="text-9xl font-thin uppercase mb-8">&#8592; Best Gift</h1>
-          <p class="text-3xl mb-5">"Creativity is just connecting things."</p>
-          <span class="text-xl mb-5">-Steve Jobs</span>
-          <button
-            class="px-5 py-3 bg-black text-cyan-400 border-none rounded-md cursor-pointer [clip-path:polygon(50%_0%,81%_5%,100%_0,100%_100%,80%_95%,50%_100%,20%_95%,0_100%,0_0,23%_5%)] transition-[clip-path] duration-300 hover:[clip-path:polygon(40%_15%,_77%_15%,_100%_10%,_100%_90%,_75%_85%,_40%_85%,_30%_100%,_0_50%,_0_50%,_30%_0)]"
-          >
-            Buy Now
-          </button>
+        <!-- menu -->
+        <!-- section-1-wrapper -->
+        <div class="section-wrapper flex px-5 items-center justify-evenly w-full">
+          <!-- cube-wrapper -->
+          <div class="cube-wrapper [perspective:1000px] pl-10">
+            <!-- cube -->
+            <div
+              class="cube w-[300px] h-[550px] [transform:rotateY(40deg)] [transform-style:preserve-3d] relative -top-2 transition-transform duration-300"
+            >
+              <!-- front -->
+              <div
+                class="front w-full h-full absolute p-6 bg-gray-200 [transform:translateZ(50px)] [transform-style:preserve-3d] shadow-inner before:shadow-inner after:shadow-inner before:w-full before:h-[100px] before:bg-gray-200 before:absolute before:top-0 before:left-0 before:[transform:rotateX(-90deg)] before:[transform-origin:top] after:w-full after:h-[100px] after:bg-gray-200 after:absolute after:bottom-0 after:left-0 after:[transform:rotateX(90deg)] after:[transform-origin:bottom]"
+              >
+                <img src="./images/iphone.png" alt="iphone" class="w-full h-full object-fill" />
+              </div>
+              <!-- front -->
+              <!-- back -->
+              <div
+                class="back w-full h-full absolute p-6 bg-gray-200 [transform:translateZ(-50px)] [transform-style:preserve-3d] shadow-inner before:shadow-inner after:shadow-inner flex justify-center items-center before:content-['iphone'] before:w-[100px] before:h-full before:bg-gray-200 before:absolute before:top-0 before:left-0 before:[transform:rotateY(-90deg)] before:[transform-origin:left] before:flex before:justify-center before:items-center before:text-lg before:font-light after:content-['iphone'] after:w-[100px] after:h-full after:bg-gray-200 after:absolute after:top-0 after:right-0 after:[transform:rotateY(90deg)] after:[transform-origin:right] after:flex after:justify-center after:items-center after:text-lg after:font-light"
+              >
+                <i class="fab fa-apple text-9xl text-gray-900 drop-shadow-md [transform:rotateY(180deg)]"></i>
+              </div>
+              <!-- back -->
+            </div>
+            <!-- cube -->
+            <!-- controls -->
+            <div
+              class="controls absolute bottom-[-150px] left-1/2 -translate-x-1/2 w-[100px] h-[100px] bg-gray-900/90 rounded-full border-8 border-gray-900/80"
+            >
+              <a href="#" class="top-x-control absolute text-gray-200 top-0 left-1/2 -translate-x-1/2"
+                ><i class="fas fa-arrow-up opacity-50 hover:opacity-100 transition-opacity duration-300"></i
+              ></a>
+              <a href="#" class="bottom-x-control absolute text-gray-200 bottom-0 left-1/2 -translate-x-1/2"
+                ><i class="fas fa-arrow-down opacity-50 hover:opacity-100 transition-opacity duration-300"></i
+              ></a>
+              <a href="#" class="left-y-control absolute text-gray-200 left-0 top-1/2 -translate-y-1/2"
+                ><i class="fas fa-arrow-left opacity-50 hover:opacity-100 transition-opacity duration-300"></i
+              ></a>
+              <a href="#" class="right-y-control absolute text-gray-200 right-0 top-1/2 -translate-y-1/2"
+                ><i class="fas fa-arrow-right opacity-50 hover:opacity-100 transition-opacity duration-300"></i
+              ></a>
+              <a href="#" class="top-z-control absolute text-gray-200 top-0 right-2 translate-y-2 rotate-45"
+                ><i class="fas fa-arrow-down opacity-50 hover:opacity-100 transition-opacity duration-300"></i
+              ></a>
+              <a href="#" class="bottom-z-control absolute text-gray-200 bottom-0 left-2 rotate-45 -translate-y-2"
+                ><i class="fas fa-arrow-up opacity-50 hover:opacity-100 transition-opacity duration-300"></i
+              ></a>
+              <a href="#" class="reset-control absolute text-gray-200 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
+                ><i class="fas fa-circle opacity-50 hover:opacity-100 transition-opacity duration-300"></i
+              ></a>
+            </div>
+            <!-- controls -->
+          </div>
+          <!-- cube-wrapper -->
+          <!-- banner -->
+          <div class="banner text-center">
+            <h1 class="text-9xl font-extralight uppercase tracking-widest">&#8592; Best Gift</h1>
+            <p class="text-4xl tracking-wider mt-9 mb-7">"Creativity is just connecting things"</p>
+            <span class="text-3xl mb-9 block"> - Steve Job</span>
+            <button
+              type="button"
+              class="inline-block bg-gray-900 text-cyan-400 px-5 py-3 rounded-lg text-lg tracking-wide [clip-path:polygon(0_0,0_100%,50%_95%,100%_100%,100%_0,50%_5%)] hover:[clip-path:polygon(5_0,_0_100%,_25%_100%,_95%_100%,_100%_0,_25%_0)] transition-all duration-500"
+            >
+              Buy Now
+            </button>
+          </div>
+          <!-- banner -->
         </div>
-        <!-- banner -->
-        <!-- slide show -->
-        <div class="slide-show w-full h-full absolute top-0 left-0 -z-10"></div>
-        <!-- slide show -->
+        <!-- section-1-wrapper -->
+        <!-- slideshow -->
+        <div class="slide-show"></div>
+        <!-- slideshow -->
       </section>
       <!-- section 1 -->
     </div>
