@@ -1,9 +1,9 @@
 export default class Cube {
-  constructor(cube) {
+  constructor(cube, { rotate = true }) {
     this.y = 20;
     this.x = 0;
     this.z = 0;
-    this.isRotate = true;
+    this.isRotate = rotate;
     this.interval;
     this.cube = cube;
 

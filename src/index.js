@@ -15,4 +15,4 @@ new SlideShow('.slide-show', imagesPath, {
 });
 
 import Cube from './cube';
-new Cube(document.querySelector('.cube'));
+new Cube(document.querySelector('.cube'), { rotate: false });
