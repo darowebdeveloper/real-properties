@@ -14,7 +14,7 @@
       <!-- section 1 -->
       <section class="section-1 w-full flex items-center justify-evenly relative">
         <!-- menu -->
-        <div class="absolute top-0 left-0 w-full flex items-center px-5 py-2">
+        <div class="container mx-auto absolute top-0 w-full flex items-center px-5 py-2">
           <!-- logo -->
           <a href="/" class="logo">
             <i class="fas fa-apple-alt text-7xl text-gray-900/80"></i>
@@ -103,18 +103,91 @@
         <!-- slideshow -->
       </section>
       <!-- section 1 -->
+
       <!-- section 2 -->
-      <div class="section-2">
+      <div class="section-2 py-20 flex flex-col items-center justify-around w-full">
         <!-- section-heading -->
-        <h2>iPhone 12</h2>
+        <h2
+          class="text-8xl font-extralight text-gray-900 relative after:w-[130%] after:h-[30vw] after:bg-gradient-to-t after:from-white after:to-cyan-400 after:absolute after:top-0 after:left-0 after:-skew-x-[50deg] after:origin-top-left after:-z-10 after:rounded-md"
+        >
+          iPhone 12
+        </h2>
         <!-- section-heading -->
         <!-- section-2-images -->
-        <div class="phones">
-          <img src="./images/iPhone 12/iphones-1-img.png" alt="iphone-1" />
+        <div class="iphones w-[50vw] h-[60vh] my-10 bg-gradient-to-t from-white to-cyan-400 rounded-md group">
+          <img
+            src="./images/iPhone 12/iphones-1-img.png"
+            class="object-contain absolute w-[inherit] h-[inherit] group-hover:opacity-0 transition-opacity duration-1000"
+            alt="iphone-1"
+          />
+          <img
+            src="./images/iPhone 12/iphones-2-img.png"
+            class="object-contain absolute w-[inherit] h-[inherit] opacity-0 group-hover:opacity-100 transition-opacity duration-1000"
+            alt="iphone-1"
+          />
         </div>
         <!-- section-2-images -->
+        <!-- section-2-button -->
+        <div class="iphone-buttons flex">
+          <a
+            href="#"
+            class="iphone-btn group w-14 h-14 rounded-full bg-gradient-to-tr from-slate-500 to-slate-700 mx-5 after:h-1/2 after:w-1/2 after:block after:border after:border-cyan-400 after:rounded-lg flex justify-center items-center relative"
+            ><span
+              class="absolute -top-8 w-max font-bold scale-0 group-hover:scale-100 transition-transform duration-300 text-center uppercase text-cyan-400"
+              >Learn More</span
+            ></a
+          >
+          <a
+            href="#"
+            class="iphone-btn group w-14 h-14 rounded-full bg-gradient-to-tr from-slate-500 to-slate-700 mx-5 after:h-1/2 after:w-1/2 after:block after:border after:border-cyan-400 after:rounded-lg flex justify-center items-center relative"
+            ><span
+              class="absolute -top-8 w-max font-bold scale-0 group-hover:scale-100 transition-transform duration-300 text-center uppercase text-cyan-400"
+              >Shop</span
+            ></a
+          >
+        </div>
+        <!-- section-2-button -->
       </div>
       <!-- section 2 -->
+
+      <!-- section-3 -->
+      <section class="section-3 w-full h-full bg-gray-900 flex flex-col py-40 justify-center items-center relative">
+        <h1 class="section-3-heading text-8xl font-extralight text-cyan-400 mb-36">Macbook Air</h1>
+        <!-- seciton-3-content -->
+        <div class="section-3-content w-[80%] flex flex-col justify-center items-center [perspective:10000px]">
+          <!-- images -->
+          <img
+            src="./images/MacBook/macbook-screen.png"
+            class="macbook-screen w-[inherit] [transform:rotateX(-80deg)] [transform-origin:bottom] transition-transform duration-[3s]"
+            alt="macbook air screen"
+          />
+          <img src="./images/MacBook/macbook-keyboard.png" class="macbook-keyboard w-[inherit]" alt="macbook air keyboard" />
+          <!-- images -->
+          <!-- loading -->
+          <div
+            class="loading-wrapper absolute w-[60%] h-[85%] [background:linear-gradient(rgba(255,255,255,.6),rgba(255,255,255,.6)),url('./images/Macbook/macbook-1-desktop.png')] bg-center bg-no-repeat -z-10 top-[5%] opacity-0 transition-opacity duration-300 delay-[2.5s]"
+          >
+            <div
+              class="loading w-full h-full absolute top-0 left-0 bg-black flex items-center justify-center flex-col transition-opacity duration-1000 delay-[5s]"
+            >
+              <i class="fab fa-apple text-6xl text-white mb-5"></i>
+              <div class="progress-bar w-[120px] h-[3px] bg-gray-400 rounded-md relative">
+                <div class="progress-bar-inside absolute top-0 left-0 w-[0] h-full bg-white transition-all duration-[1.5s] delay-[3s]"></div>
+              </div>
+            </div>
+          </div>
+          <!-- loading -->
+          <!-- info -->
+          <div class="macbook-info absolute width-[700px] text-center opacity-0 transition-opacity duration-1000 delay-[5s]">
+            <h2 class="macbook-info-heading text-6xl text-cyan-400">Light.Speed.</h2>
+            <p class="macbook-price text-2xl font-light my-4">starting at $999</p>
+            <button class="macbook-btn w-[250px] h-[50px] bg-gray-50 shadow-md font-bold text-cyan-400 rounded-md">Buy Now</button>
+          </div>
+          <!-- info -->
+        </div>
+        <!-- seciton-3-content -->
+      </section>
+      <!-- section-3 -->
     </div>
   </body>
 </html>
